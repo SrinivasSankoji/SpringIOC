@@ -18,5 +18,4 @@ public class ConstructorBasedInjection {
 	public void processMessage(String message) {
 		messageService.sendMessage(message);
 	}
-
 }

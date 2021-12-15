@@ -3,8 +3,6 @@ package com.ioc.javaguides.model;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class FirstBean {
-
-	
 	@Autowired
 	private SecondBean secondBean;
 	@Autowired

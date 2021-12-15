@@ -13,9 +13,11 @@ public class ScopeController {
 		UserService service=context.getBean(UserService.class);
 		service.setName("Singleton Scope");
 		System.out.println(service.getName());
+		System.out.println(service.hashCode());
 		
 		UserService service1=context.getBean(UserService.class);
 		System.out.println(service1.getName());
+		System.out.println(service1.hashCode());
 		context.close();
 	}
 }
